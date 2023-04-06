@@ -32,3 +32,16 @@ def solution(k, tangerine):
         k -= i
         answer += 1
     return answer
+
+# 다른 사람 풀이
+import collections
+def solution(k, tangerine):
+    answer = 0
+    cnt = collections.Counter(tangerine)
+
+    for v in sorted(cnt.values(), reverse = True):
+        k -= v
+        answer += 1
+        if k <= 0:
+            break
+    return answer
