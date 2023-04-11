@@ -18,3 +18,15 @@ git commit -m "[BOJ] 브론즈5 / 23.04.04 / 1분" -m "https://www.acmicpc.net/p
 ## 알고리즘 분류
 
 * 해시 : Key-value 쌍을 관리하는 dictionary로 해결 (sort로 시간 단축 활용!)
+* 스택 : LIFO(Last In First out)구조
+```
+stack = []
+stack.append(1) # 삽입 O(1)
+stack.pop() # 삭제 O(1)
+```
+* 큐 : FIFO(First In First Out)구조
+```
+queue = deque() # 리스트를 변수로 사용 가능
+queue.append(1) # 삽입 O(1)
+queue.popleft() # 삭제 O(1)
+```
