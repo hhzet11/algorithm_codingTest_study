@@ -47,13 +47,11 @@ def dijkstra(graph, start) :
 
     while queue :
         dist, node = heapq.heappop(queue)
-        print(dist, node)
         if distances[node] < dist :
             continue
         for next_node, next_dist in graph[node] :
             distance = dist + next_dist
             if distance < distances[next_node] :
-                print('here', next_node, next_dist)
                 distances[next_node] = distance
                 heapq.heappush(queue, [distance, next_node])
 
