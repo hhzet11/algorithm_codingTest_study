@@ -22,4 +22,4 @@ for r in range(1, n):
             # 세로면
             dp[1][r][c] = dp[1][r-1][c] + dp[2][r-1][c]
 
-print(sum(dp[i][n-1][[n-1] for i in range(3)))
+print(sum(dp[i][n-1][n-1] for i in range(3)))
